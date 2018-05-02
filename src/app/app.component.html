@@ -1,0 +1,19 @@
+<!-- <div style="text-align:center">
+	<h1>{{ title }}!</h1>
+</div>
+	<a routerLink="/dashboard">DashBoard</a> 
+	<a routerLink="/heroes">Heroes</a> -->
+
+<mat-toolbar color="primary">
+	<mat-toolbar-row>
+		<span>{{ title }}!</span>
+		<span class="example-spacer"></span>
+		<!-- <div class="links"> -->
+			<a  routerLink="/dashboard" mat-button>DashBoard</a>
+			<a  routerLink="/heroes" mat-button>Restaurants</a>
+		<!-- </div> -->
+	</mat-toolbar-row>
+</mat-toolbar>
+
+<router-outlet></router-outlet>
+<!-- <app-messages></app-messages> -->

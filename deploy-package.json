@@ -1,0 +1,15 @@
+{
+  "name": "my-angular",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+      "start": "node deploy-server"
+    },
+  "private": true,
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "express": "4.14.0"
+  }
+}

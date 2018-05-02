@@ -1,0 +1,85 @@
+<div *ngIf="hero">
+	<div class="container">
+		<label>
+			<span>Question Id: </span>{{ hero.questionId }}
+		</label>
+		<br>
+		<br>
+		<label>
+			<span>Category Id:</span>
+			<mat-form-field>
+				<input matInput [(ngModel)]="hero.categoryId">
+			</mat-form-field>
+		</label>
+		<br>
+		<label>
+			<span>Category Name:</span>
+			<mat-form-field>
+				<input matInput [(ngModel)]="hero.categoryName">
+			</mat-form-field>
+		</label>
+		<br>
+		<label>
+			<span>Topic Id</span>
+			<mat-form-field>
+				<input matInput [(ngModel)]="hero.topicId">
+			</mat-form-field>
+		</label>
+		<br>
+		<label>
+			<span>Topic Name</span>
+			<mat-form-field>
+				<input matInput [(ngModel)]="hero.topicName">
+			</mat-form-field>
+		</label>
+		<br>
+		<label>
+			<span>Question Level</span>
+			<mat-form-field>
+				<input matInput [(ngModel)]="hero.questionLevel">
+			</mat-form-field>
+		</label>
+		<br>
+		<label>
+			<span>Question Stamp:</span>
+			<mat-form-field>
+				<input matInput [(ngModel)]="hero.question">
+			</mat-form-field>
+		</label>
+		<br>
+		<label>
+			<span>Option 1</span>
+			<mat-form-field>
+				<input matInput [(ngModel)]="hero.option1">
+			</mat-form-field>
+		</label>
+		<label>
+			<span>Option 2</span>
+			<mat-form-field>
+				<input matInput [(ngModel)]="hero.option2">
+			</mat-form-field>
+		</label>
+		<label>
+			<span>Option 3</span>
+			<mat-form-field>
+				<input matInput [(ngModel)]="hero.option3">
+			</mat-form-field>
+		</label>
+		<label>
+			<span>Option 4</span>
+			<mat-form-field>
+				<input matInput [(ngModel)]="hero.option4">
+			</mat-form-field>
+		</label>
+		<br>
+		<label>
+			<span>Correct Answer</span>
+			<mat-form-field>
+				<input matInput [(ngModel)]="hero.correctAnswer">
+			</mat-form-field>
+		</label>
+		<br>
+		<button mat-raised-button color="primary" (click)="goBack()">Back</button>
+		<button mat-raised-button color="primary" (click)="save()">Save</button>
+	</div>
+</div>

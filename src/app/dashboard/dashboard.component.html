@@ -1,0 +1,106 @@
+<div class="grid">
+	<form>
+		<label>Question Id:</label>
+		<input type="number" #questionId placeholder="Question Id" required>
+		<br>
+		<label>Category Id:</label>
+		<input type="number" #categoryId placeholder="Category Id" required>
+		<br>		
+		<label>Category Name:</label>
+		<input type="text" #categoryName placeholder="Category Name" required>
+		<br>
+		<label>Topic Id:</label>
+		<input type="number" #topicId placeholder="Topic Id" required>
+		<br>
+		<label>Topic Name:</label>
+		<input type="text" #topicName placeholder="Topic Name" required>
+		<br>			
+		<label>Question Level:</label>
+		<input type="number" #questionLevel placeholder="Question Level" required>
+		<br>
+		<label>Question Stamp:</label>
+		<input type="text" #questionStamp placeholder="Question Stamp" required>
+		<br>
+		<label>Option1:</label>
+		<input type="text"  #option1 placeholder="Options" required>
+		<label>Option2:</label>
+		<input type="text"  #option2 placeholder="Options" required>
+		<label>Option3:</label>
+		<input type="text" #option3 placeholder="Options" required>
+		<label>Option4:</label>
+		<input type="text" #option4 placeholder="Options" required>		
+		<br>
+		<label>Correct Answer:</label>
+		<input type="text" #correctAnswer placeholder="Correct Answer" required>
+		<br>
+		<button (click)="add(questionId.value, categoryId.value, categoryName.value, topicId.value, topicName.value, questionLevel.value, questionStamp.value, option1.value, option2.value, option3.value, option4.value, correctAnswer.value); questionId.value=''; categoryId.value=''; categoryName.value=''; topicId.value=''; topicName.value=''; questionLevel.value=''; questionStamp.value=''; option1.value=''; option2.value=''; option3.value=''; option4.value=''; correctAnswer.value='';">Add</button>
+	</form>
+</div>
+
+<!-- <div class="container">
+		<label>
+			<span>Question Id: </span>
+			<mat-form-field>
+					<input matInput [(ngModel)]="questionId">
+				</mat-form-field>
+		</label>
+		<br>
+		<br>
+		<label>
+			<span>Category Id:</span>
+			<mat-form-field>
+				<input matInput [(ngModel)]="categoryId">
+			</mat-form-field>
+		</label>
+		<br>
+		<label>
+			<span>Category Name:</span>
+			<mat-form-field>
+				<input matInput [(ngModel)]="categoryName">
+			</mat-form-field>
+		</label>
+		<br>
+		<label>
+			<span>Topic Id</span>
+			<mat-form-field>
+				<input matInput [(ngModel)]="topicId">
+			</mat-form-field>
+		</label>
+		<br>
+		<label>
+			<span>Topic Name</span>
+			<mat-form-field>
+				<input matInput [(ngModel)]="topicName">
+			</mat-form-field>
+		</label>
+		<br>
+		<label>
+			<span>Question Level</span>
+			<mat-form-field>
+				<input matInput [(ngModel)]="questionLevel">
+			</mat-form-field>
+		</label>
+		<br>
+		<label>
+			<span>Question Stamp:</span>
+			<mat-form-field>
+				<input matInput [(ngModel)]="question">
+			</mat-form-field>
+		</label>
+		<br>
+		<label>
+			<span>Options</span>
+			<mat-form-field>
+				<input matInput [(ngModel)]="options">
+			</mat-form-field>
+		</label>
+		<br>
+		<label>
+			<span>Correct Answer</span>
+			<mat-form-field>
+				<input matInput [(ngModel)]="correctAnswer">
+			</mat-form-field>
+		</label>
+		<br>
+		<button mat-raised-button color="primary" (click)="add()">Add</button>
+	</div> -->
